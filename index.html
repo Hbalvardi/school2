@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدرسه نمونه</title>
+  <link rel="stylesheet" href="{% static './styles.css' %}">
+</head>
+<body>
+
+  <!-- هدر -->
+  <header class="main-header">
+    <div class="logo">🏫 مدرسه نمونه</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="{% static '#questions' %}">نمونه سؤالات</a></li>
+        <li><a href="{% static '#consulting' %}">مشاوره</a></li>
+        <li><a href="{% static '#contact' %}">ارتباط با معلمان</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- معرفی مدرسه -->
+  <section class="intro">
+    <h1>دربارهٔ مدرسه ما</h1>
+    <p>
+      مدرسه نمونه با سابقه‌ای درخشان در آموزش و پرورش، محیطی پویا برای رشد علمی و اخلاقی دانش‌آموزان فراهم کرده است.
+    </p>
+  </section>
+
+  <!-- اخبار و مقالات -->
+  <section class="news-articles">
+    <h2>اخبار و مقالات</h2>
+    <div class="articles-grid">
+      <article class="news-card">
+        <h3>عنوان خبر اول</h3>
+        <p>خلاصه‌ای از خبر یا مقاله...</p>
+        <a href="{% static '#' %}">ادامه مطلب</a>
+      </article>
+      <article class="news-card">
+        <h3>عنوان خبر دوم</h3>
+        <p>خلاصه‌ای از خبر یا مقاله...</p>
+        <a href="{% static '#' %}">ادامه مطلب</a>
+      </article>
+      <article class="news-card">
+        <h3>عنوان خبر سوم</h3>
+        <p>خلاصه‌ای از خبر یا مقاله...</p>
+        <a href="{% static '#' %}">ادامه مطلب</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- فوتر -->
+  <footer class="main-footer" id="contact">
+    <p>© تمامی حقوق محفوظ است - مدرسه نمونه</p>
+    <p>راه‌های ارتباطی: ایمیل | تلفن | شبکه‌های اجتماعی</p>
+  </footer>
+
+</body>
+</html>
